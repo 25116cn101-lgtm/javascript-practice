@@ -34,7 +34,3 @@
 //     const element = myArray[index];
 //     console.log(element);
 // }
-
-
-
-

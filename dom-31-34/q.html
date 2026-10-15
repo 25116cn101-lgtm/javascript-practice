@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+</head>
+<body>
+
+    <script>
+        // Qs1: Create input and button
+        let input = document.createElement("input");
+        let btn = document.createElement("button");
+
+        btn.innerText = "Click me";
+
+        document.body.append(input);
+        document.body.append(btn);
+
+
+        // Qs2: Add attributes
+        input.placeholder = "username";
+        btn.id = "btn";
+
+
+        // Qs3: Select button using querySelector
+        let button = document.querySelector("#btn");
+
+        button.style.backgroundColor = "blue";
+        button.style.color = "white";
+
+
+        // Qs4: Create h1 with underlined text
+        let h1 = document.createElement("h1");
+
+        h1.innerHTML = "<u>DOM Practice</u>";
+        h1.style.color = "purple";
+
+        document.body.append(h1);
+
+
+        // Qs5: Create paragraph with Delta in bold
+        let p = document.createElement("p");
+
+        p.innerHTML = "Apna College <b>Delta</b> Practice";
+
+        document.body.append(p);
+    </script>
+
+</body>
+</html>
